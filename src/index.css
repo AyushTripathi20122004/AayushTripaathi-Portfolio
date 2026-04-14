@@ -1,4 +1,2 @@
 @import "tailwindcss";
-.noteCardBase::-webkit-scrollbar{
-    scrollbar-width: none;
-}
+
