@@ -1,2 +1,80 @@
 @import "tailwindcss";
 
+*{
+      font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:auto;
+    font-style: normal;
+}
+
+*::-webkit-scrollbar{
+    scrollbar-width: none;
+}
+
+@keyframes Animation1 {
+    0%{
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateY(50px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.anination{
+    animation: Animation1 1s ease  forwards ;
+}
+
+@keyframes AnimationCard {
+    0%{
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(50px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0px) scale(1);
+    }
+}
+.Cardanination{
+    animation: AnimationCard 2s ease  forwards ;
+}
+
+@keyframes imageAnimation {
+    0%{
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0px);
+    }
+}
+.imageAnimation{
+    animation: imageAnimation 2s ease   forwards ;
+}
+
+
+
+
+
+
+
+
+
+
+.toggle_dark{
+    color: rgb(122, 10, 202);
+    background-color: #171a0b;
+    box-shadow: white;
+}
+.toggleLight{
+    color: black;
+    background-color: white;
+}
