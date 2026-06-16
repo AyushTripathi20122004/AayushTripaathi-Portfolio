@@ -8,7 +8,7 @@ const OwnerImage = () => {
   const data=useContext(ThemeDataContext)
   return (
     <div className='h-full w-full developerImage overflow-hidden '>
-      <img className=' h-full w-full object-cover' src={data.theme=='dark'?DeveloperImage:DeveloperImage2} alt=""  />
+      <img className=' h-full w-full object-cover object-left' src={data.theme=='dark'?DeveloperImage:DeveloperImage2} alt=""  />
     </div>
   )
 }
