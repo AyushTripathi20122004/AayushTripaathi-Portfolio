@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "homepage": "https://AyushTripathi20122004.github.io/ToggleModeWebpage/",
+    "homepage": "https://AyushTripathi20122004.github.io/AayushTripaathi-Portfolio/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

@@ -52,7 +52,7 @@ const Pcard = ({len,index}) => {
                     iconImage:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtP4ap9JhmDHpQufAN0Y27MG5fzjprQkTmQ&s"
                 }
             ],
-            link: '#'
+            link: 'https://ayushtripathi20122004.github.io/AayushTripaathi-Portfolio/'
         },
         {
             image: WeatherApp,
