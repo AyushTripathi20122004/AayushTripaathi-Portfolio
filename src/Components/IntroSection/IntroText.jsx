@@ -6,7 +6,7 @@ import { ThemeDataContext } from '../ThemeSection/ThemeContext';
 const IntroText = () => {
   const data=useContext(ThemeDataContext);
   return (
-    <div id='Home' className='flex w-full flex-col gap-6 lg:px-6 md:px-4 px-2 py-3 '>
+    <div id='Home' className='flex w-full flex-col gap-6 lg:px-6 md:px-4 px-6 py-3 '>
         {/* TEXT1 */}
        <div  className={` introTextAnime introdura1 flex  w-fit items-center ${data.theme=='dark'? 'border border-white/60 text-white':'border border-black text-black' }  rounded-full px-4 py-1.5  gap-2`}>
              <BadgeCheck size={16}/>
