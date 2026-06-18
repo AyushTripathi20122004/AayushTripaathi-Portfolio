@@ -19,10 +19,10 @@ const Skills = () => {
     const skillTl=gsap.timeline({
 
       scrollTrigger:{
-        trigger:'.aboutMeSection',
+        trigger:'#Skills',
         scroller:'body',
         markers:false,
-        start:'90% 50%',
+        start:'0% 90%',
         end:'bottom top'
       }
 

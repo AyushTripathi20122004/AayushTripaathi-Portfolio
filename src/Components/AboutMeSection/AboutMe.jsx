@@ -14,9 +14,10 @@ const AboutMe = () => {
   useEffect(() => {
   const AmTl = gsap.timeline({
     scrollTrigger:{
-      trigger:'.Introsection',
+      trigger:'.aboutMeSection',
       scroller:'body',
-      start:'70% 50%',
+      markers:false,
+      start:'0% 90%',
       end:'bottom top'
     }
   });

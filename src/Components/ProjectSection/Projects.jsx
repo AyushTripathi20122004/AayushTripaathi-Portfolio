@@ -41,9 +41,9 @@ const Projects = () => {
                 duration: 0.3
             },
             scrollTrigger: {
-                trigger: "#Skills",
+                trigger: "#Projects",
                 scroller: "body",
-                start: "70% 50%",
+                start: "0% 90%",
                 end: "bottom top",
             },
             });

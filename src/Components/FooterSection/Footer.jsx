@@ -15,10 +15,10 @@ const Footer = () => {
     useEffect(()=>{
         const FooterTl=gsap.timeline({
             scrollTrigger: {
-                trigger: "#Projects",
+                trigger: ".footer",
                 scroller: "body",
                 markers: false,
-                start: "25% 50%",
+                start: "0% 90%",
                 end: "bottom top",
             },
         }

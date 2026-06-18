@@ -12,7 +12,13 @@ const AMText = () => {
         </div>
        
        <p className={`${data.theme=='dark'?'text-white/80':'text-black font-normal'} font-semibold AmText text-5xl text-center `}>
-       <span className='inline-block'>I'm a passionate Frontend Developer</span><br className='lg:block md:hidden hidden' /><span className='inline-block'>who loves</span> <span className='text-violet-600 inline-block'> turning ideas into real prodects.</span><br /> <span className='inline-block text-lg font-normal'>I enjoy building interfaces and learning new technologies.</span></p>
+       <span className='inline-block'>I'm a passionate Frontend Developer</span><br/>
+
+       <span className='inline-block'>who loves <span className='text-violet-600 inline-block'> turning ideas into real products.</span></span><br />
+       
+       <span className='inline-block text-lg font-normal'>I enjoy building interfaces and learning new technologies.</span>
+       
+       </p>
 
        <div className='rounded-xl Ambutton  mt-2   border border-violet-600 bg-violet-600/5 px-4 py-3 active:scale-95 transition-transform duration-150'>
         <a href='#Contacts' className='flex  items-center gap-3 text-violet-600 font-medium'>
