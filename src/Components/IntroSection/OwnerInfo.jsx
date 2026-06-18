@@ -13,39 +13,38 @@ const OwnerInfo = () => {
         </div>
         <pre>
           <span className=" text-blue-400 font-semibold">const</span>{" "}
-          <span className="text-blue-400 font-semibold">developer</span>  =  {"{"}
+          <span className="text-blue-400 font-semibold">developer</span> <span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>=</span>  <span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{'{'}</span>
 
         </pre>
 
         <pre className="ml-4 ">
-          <span className=" text-blue-400 font-semibold">name</span>:{" "}
-          <span className="text-yellow-400">  "Aayush  Tripaathi"</span>,
+          <span className=" text-blue-400 font-semibold">name</span><span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{'  :'}</span>{" "}
+          <span className="text-yellow-400">  "Aayush  Tripaathi"</span><span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{','}</span>
 
         </pre>
 
         <pre className="ml-4">
-          <span className=" text-blue-400 font-semibold">role</span>:{" "}
-          <span className="text-yellow-400">  "Frontend  Developer"</span>,
+          <span className=" text-blue-400 font-semibold">role</span><span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{'  :'}</span>{" "}
+          <span className="text-yellow-400">  "Frontend  Developer"</span><span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{','}</span>
 
         </pre>
 
         <pre className="ml-4">
-          <span className=" text-blue-400 font-semibold">passion</span>:{" "}
+          <span className=" text-blue-400 font-semibold">passion</span><span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{'  :'}</span>{" "}
           <span className="text-yellow-400">
               "Building  beautiful<br />and  functional  web  apps"
-          </span>,
-
+          </span><span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{','}</span>
         </pre>
 
         <pre className="ml-4">
-          <span className=" text-blue-400 font-semibold">skills</span>:   [
-          <span className="text-yellow-400"> "HTML"</span>,  {" "}
-          <span className="text-yellow-400">"CSS"</span>,  {" "}
-          <span className="text-yellow-400">"JavaScript"</span>,  {" "}
-          <span className="text-yellow-400"><br />"React" </span>]
+          <span className=" text-blue-400 font-semibold">skills</span><span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{'  :'}</span>   <span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{'['}</span>
+          <span className="text-yellow-400"> "HTML"</span><span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{','}</span> {" "}
+          <span className="text-yellow-400">"CSS"</span><span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{','}</span>  {" "}
+          <span className="text-yellow-400">"JavaScript"</span><span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{','}</span>  {" "}
+          <span className="text-yellow-400"><br />"React" </span><span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{']'}</span>
         </pre>
 
-        <pre>{"};"}</pre>
+        <pre><span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{'}'}<span className={`${data.theme=='dark'? 'text-white':'text-black'}`}>{';'}</span></span></pre>
       </div>
   )
 }
