@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import NavBar from './Components/NavBarSection/NavBar'
 import Intro from './Components/IntroSection/Intro'
 import AboutMe from './Components/AboutMeSection/AboutMe'
@@ -13,12 +13,12 @@ import { useEffect, useRef } from 'react'
 // imorting gsap for cursor animation
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Loader from './Components/Loader/loader'
 gsap.registerPlugin(ScrollTrigger);
 
 
 const App = () => {
-   const lenisRef = useRef()
-  
+  const lenisRef = useRef()
   useEffect(() => {
     function update(time) {
       lenisRef.current?.lenis?.raf(time)
@@ -50,6 +50,31 @@ const App = () => {
 }, []);
   
   const data=useContext(ThemeDataContext);
+  
+  // loader coder here
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const handleLoad = () => {
+      setLoading(false);
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    // Fallback
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+      clearTimeout(timer);
+    };
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <ReactLenis root options={{ autoRaf: true }}>
       
