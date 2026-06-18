@@ -24,11 +24,14 @@ const ResponseMenu = ({cancel}) => {
     }
   }
   return (
-    <div>
-      <ul className={`p-6 gap-2 flex   h-screen  flex-col list ${data.theme =='dark' ? 'text-white bg-black' : 'text-black bg-white' } font-semibold`}>
-              <div className='flex justify-end w-full'>
-                <button onClick={() => cancel('hidden')}><X className={`${data.theme === 'dark' ? 'text-white' : 'text-black'}`} /></button>
-              </div>
+    <div className={` h-screen  flex flex-col justify-between  ${data.theme =='dark' ? 'text-white bg-black' : 'text-black bg-white' } p-6 gap-2 `}>
+      
+      <div className='flex justify-end w-full'>
+        <button onClick={() => cancel('hidden')}><X className={`${data.theme === 'dark' ? 'text-white' : 'text-black'}`} /></button>
+      </div>
+      
+      <ul className={` gap-2 flex    flex-col list font-semibold`}>
+              
 
               {navItems.map((ele,idx)=>{
                   return <li key={idx} onClick={() => cancel('hidden')} className={` ${data.theme === 'dark' ? 'text-white border-white/10' : 'text-black border-black/10'} flex items-center gap-2  text-[14px] hover:border-b-2  hover:text-purple-500 hover:border-purple-500 border-b-1  py-4 px-4`}>
@@ -37,7 +40,7 @@ const ResponseMenu = ({cancel}) => {
                     </li>
               })
               }
-            
+            </ul>
             <div className='w-full h-full flex justify-end flex-col  gap-2'>
               {/* cv button */}
               <div className='Cvbtn'>
@@ -58,7 +61,6 @@ const ResponseMenu = ({cancel}) => {
                 </button>
               </div>
             </div>
-            </ul>
     </div>
   )
 }

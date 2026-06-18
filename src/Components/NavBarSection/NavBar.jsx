@@ -62,7 +62,7 @@ const NavBar = () => {
           <button onClick={() => setCancel('visible')}><TextAlignJustify className={`${data.theme === 'dark' ? 'text-white' : 'text-black'}`} /></button>
         </div>
 
-        <div className={`h-full  md:h-full md:w-1/2  w-full absolute bottom-0 right-0 ${cancel} `} >
+        <div className={`h-full  md:h-full md:w-[60%]  w-full absolute bottom-0 right-0 ${cancel} `} >
             <ResponseMenu cancel={setCancel} />
         </div>
         
