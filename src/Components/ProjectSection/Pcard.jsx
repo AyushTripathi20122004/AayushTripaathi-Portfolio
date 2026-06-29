@@ -1,9 +1,10 @@
 import { SquareArrowOutUpRight } from 'lucide-react'
 import React, { useContext } from 'react'
-
 import DeveloperImage2 from '../../assets/WebsiteImage.png'
 import WeatherApp from '../../assets/WeatherApp.png'
 import NotesApp from '../../assets/NotesApp.png'
+import KristianUlrych from '../../assets/KristianUlrych.png'
+import ThomasVance from '../../assets/ThomasVance.png'
 import { ThemeDataContext } from '../ThemeSection/ThemeContext'
 
 const Pcard = ({len,index}) => {
@@ -53,6 +54,46 @@ const Pcard = ({len,index}) => {
                 }
             ],
             link: 'https://ayushtripathi20122004.github.io/AayushTripaathi-Portfolio/'
+        },
+        {
+            image: KristianUlrych,
+            heading: 'Kristian Ulrych',
+            HeroText: "Developed a fully responsive clone of Kristian Ulrych's portfolio, ensuring compatibility and optimal performance across desktops, tablets, and mobile devices.",
+            repositoryLink: 'https://github.com/AyushTripathi20122004/Kristian-Ulrych-website.git',
+            langUsed: [{
+                    language:'HTML',
+                    iconImage:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                }, 
+                {
+                    language:'Tailwind',
+                    iconImage:"https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                },
+                {
+                    language:'GSAP',
+                    iconImage:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtP4ap9JhmDHpQufAN0Y27MG5fzjprQkTmQ&s"
+                }
+            ],
+            link: 'https://ayushtripathi20122004.github.io/Kristian-Ulrych-website/'
+        },
+        {
+            image: ThomasVance,
+            heading: 'Thomas Vance',
+            HeroText: 'A fully responsive skincare and beauty products showcase website with a clean, modern design, optimized for all devices.',
+            repositoryLink: 'https://github.com/AyushTripathi20122004/ThomasVance.git',
+            langUsed: [{
+                    language:'HTML',
+                    iconImage:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                }, 
+                {
+                    language:'Tailwind',
+                    iconImage:"https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                },
+                {
+                    language:'GSAP',
+                    iconImage:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtP4ap9JhmDHpQufAN0Y27MG5fzjprQkTmQ&s"
+                }
+            ],
+            link: 'https://ayushtripathi20122004.github.io/ThomasVance/'
         },
         {
             image: WeatherApp,
