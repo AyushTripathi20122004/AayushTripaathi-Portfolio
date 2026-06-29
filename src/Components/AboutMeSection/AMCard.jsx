@@ -26,7 +26,7 @@ const AMCard = () => {
       border: 'border-teal-500/80',
       darkGradient: 'bg-gradient-to-r from-teal-600/20 via-teal-500/20 via-50% to-transparent',
       lightGradient: 'bg-gradient-to-r from-teal-600/40 via-teal-100/80 via-50% to-transparent',
-      title: "4+",
+      title: "6+",
       text: "Project Completed",
       text2: 'Built responsive and modern web applications',
       textColor: 'text-teal-500'
