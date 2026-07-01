@@ -34,21 +34,21 @@ const Footer = () => {
             filter:'blur(10px)',
             opacity:0,
             ease:'backout(1.7)'
-        });
+        },'start');
         FooterTl.from('.Femail,.FPhone',{
             y:20,
             filter:'blur(10px)',
             opacity:0,
             ease:'backout(1.7)',
             stagger:0.1
-        });
+        },'start');
         FooterTl.from('.flink1,.flink2,.flink3',{
             x:20,
             filter:'blur(10px)',
             opacity:0,
             ease:'backout(1.7)',
             stagger:0.1
-        });
+        },'start');
 
 
     },[])

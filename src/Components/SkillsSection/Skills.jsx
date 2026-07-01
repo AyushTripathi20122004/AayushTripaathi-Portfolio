@@ -42,7 +42,7 @@ const Skills = () => {
         opacity: 0,
         filter: 'blur(10px)',
         ease: 'back.out(1.3)'
-      });
+      },'start');
 
     skillTl.from('.skillText1,.spCard1,.spCard2',{
       x:-100,
@@ -50,14 +50,14 @@ const Skills = () => {
       opacity:0,
       ease:'back.out(1.5)',
       stagger:0.1
-    })
+    },'start')
     skillTl.from('.skillright',
       {
         x: 20,
         opacity: 0,
         filter: 'blur(10px)',
         ease: 'back.out(1.3)'
-      });
+      },'start');
     return () => {
       skillTl.scrollTrigger?.kill();
       skillTl.kill();
