@@ -5,6 +5,7 @@ import WeatherApp from '../../assets/WeatherApp.png'
 import NotesApp from '../../assets/NotesApp.png'
 import KristianUlrych from '../../assets/KristianUlrych.png'
 import ThomasVance from '../../assets/ThomasVance.png'
+import Olympians from '../../assets/Olympians.png'
 import { ThemeDataContext } from '../ThemeSection/ThemeContext'
 
 const Pcard = ({len,index}) => {
@@ -94,6 +95,26 @@ const Pcard = ({len,index}) => {
                 }
             ],
             link: 'https://ayushtripathi20122004.github.io/ThomasVance/'
+        },
+        {
+            image: Olympians,
+            heading: 'OLYMPIANS',
+            HeroText: 'A fully responsive skincare and beauty products showcase website with a clean, modern design, optimized for all devices.',
+            repositoryLink: 'https://github.com/AyushTripathi20122004/OLYMPIANS.git',
+            langUsed: [{
+                    language:'HTML',
+                    iconImage:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                }, 
+                {
+                    language:'Tailwind',
+                    iconImage:"https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                },
+                {
+                    language:'GSAP',
+                    iconImage:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtP4ap9JhmDHpQufAN0Y27MG5fzjprQkTmQ&s"
+                }
+            ],
+            link: 'https://ayushtripathi20122004.github.io/OLYMPIANS/'
         },
         {
             image: WeatherApp,
