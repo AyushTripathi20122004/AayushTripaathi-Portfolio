@@ -122,3 +122,53 @@ html {
     backface-visibility: hidden;
     transform-origin: center;
 }
+
+/* swipper code here */
+
+.swiper {
+    padding-bottom: 55px;
+}
+.swiper-slide{
+    height: auto !important;
+
+}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    margin-top: 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+    background: #ffff !important;
+}
+
+.swiper-pagination-bullet-active {
+    transform: scale(1.3);
+    opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff !important;
+    background-color: rgba(12, 12, 12, 0.699);
+    border: 1px solid rgba(255, 255, 255, 0.418);
+    border-radius: 50% !important;
+    height: 50px !important;
+    width: 50px !important;
+}
+.swiper-button-next svg,.swiper-button-prev svg{
+    height: 12px !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 22px;
+}
+
+@media (max-width: 1024px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+
+
