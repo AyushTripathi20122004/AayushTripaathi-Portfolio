@@ -206,7 +206,7 @@ const Projects = () => {
 
 
     return (
-        <div id='Projects' className='  mt-8 px-4'>
+        <div id='Projects' className='  mt-8 px-4 '>
 
             <div className=' flex flex-col mb-5 justify-center items-center '>
                 <div className='pText1 flex mb-4 gap-2 bg-violet-600/20 rounded-full items-center  px-6 py-1 border border-violet-500 text-violet-700 font-medium'>
@@ -302,13 +302,14 @@ const Projects = () => {
                                             </div>
                                             {/* languages used and link of webiste */}
                                             <div className=' w-full'>
-                                                <div className='flex gap-2'>
+                                                <div className='flex flex-wrap gap-2'>
                                                     {
                                                         ele.langUsed.map((elem, idx) => {
                                                             return (
                                                                 <span key={idx} className={`border ${data.theme == 'dark' ? 'text-white border-white/60 bg-white/5 ' : 'text-black bg-black/5 border-black/60'} p-2 text-nowrap text-xs font-medium flex   gap-2  rounded-full`}>
                                                                     <div className='h-4 w-4 '><img className='h-full w-full object-cover' src={elem.iconImage} alt="" /></div>
-                                                                    {elem.language}</span>
+                                                                    {elem.language}
+                                                                </span>
                                                             )
                                                         })
                                                     }
