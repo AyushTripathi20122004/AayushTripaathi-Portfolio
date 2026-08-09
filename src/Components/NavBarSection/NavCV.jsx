@@ -1,7 +1,7 @@
 import { Download, MoonIcon, SunIcon } from 'lucide-react'
 import React, { useContext } from 'react'
 import { ThemeDataContext } from '../ThemeSection/ThemeContext';
-import CV from '../../assets/AayushTripaathiCv.pdf'
+import CV from '../../assets/AayushTripaathi_Resume.pdf'
 
 const NavCV = () => {
   const data=useContext(ThemeDataContext);
