@@ -2,7 +2,7 @@ import { Download, MoonIcon, SunIcon, X, Home, Info, Code, Briefcase, Mail } fro
 import React from 'react'
 import { useContext } from 'react'
 import { ThemeDataContext } from '../ThemeSection/ThemeContext'
-import CV from '../../assets/AayushTripaathiCv.pdf'
+import CV from '../../assets/AayushTripaathi_Resume.pdf'
 
 const ResponseMenu = ({cancel}) => {
     const data=useContext(ThemeDataContext)
