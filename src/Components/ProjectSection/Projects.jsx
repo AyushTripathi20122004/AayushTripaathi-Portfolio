@@ -1,22 +1,20 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { ChevronLeft, ChevronRight, SparkleIcon, Sparkles, StarIcon, SquareArrowOutUpRight } from 'lucide-react'
-import Pcard from './Pcard'
+import { Sparkles, StarIcon, SquareArrowOutUpRight, Import } from 'lucide-react'
 import { ThemeDataContext } from '../ThemeSection/ThemeContext'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import DeveloperImage2 from '../../assets/WebsiteImage.png'
-import WeatherApp from '../../assets/WeatherApp.png'
-import NotesApp from '../../assets/NotesApp.png'
 import KristianUlrych from '../../assets/KristianUlrych.png'
+import VitaTravel from '../../assets/VitaTravel.png'
+import MacBook from '../../assets/MacBook.png'
 import ThomasVance from '../../assets/ThomasVance.png'
-import Olympians from '../../assets/Olympians.png'
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import viteLogo from '/public/favicon.svg'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,6 +22,62 @@ const Projects = () => {
     const data = useContext(ThemeDataContext)
 
     const cards = [
+        {
+            image: MacBook,
+            heading: 'MacBook Pro',
+            HeroText: 'A visually immersive and fully responsive MacBook Pro landing page designed to deliver a premium digital experience through smooth interactions, dynamic visuals, and engaging animations.',
+            repositoryLink: "https://github.com/AyushTripathi20122004/Macbook-Landing-Page.git",
+            langUsed: [
+                {
+                    language: 'Vite',
+                    iconImage: viteLogo
+                },
+                {
+                    language: 'HTML',
+                    iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
+                },
+                {
+                    language: 'Tailwind',
+                    iconImage: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                },
+                {
+                    language: 'GSAP',
+                    iconImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtP4ap9JhmDHpQufAN0Y27MG5fzjprQkTmQ&s"
+                },
+                {
+                    language: 'Vercel',
+                    iconImage: 'https://cdn.simpleicons.org/vercel'
+                },
+
+            ],
+            link: 'https://macbook-landing-page-cyan.vercel.app/'
+        },
+        {
+            image: VitaTravel,
+            heading: 'Vita Travel',
+            HeroText: 'Vita Travel is a visually engaging and fully responsive travel website inspired by modern digital experiences, designed to showcase destinations through smooth interactions and an immersive user experience.',
+            repositoryLink: "https://github.com/AyushTripathi20122004/VitaTravel.git",
+            langUsed: [
+                {
+                    language: 'React js',
+                    iconImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                },
+                {
+                    language: 'Tailwind',
+                    iconImage: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                },
+                {
+                    language: 'GSAP',
+                    iconImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtP4ap9JhmDHpQufAN0Y27MG5fzjprQkTmQ&s"
+                },
+                {
+                    language: 'Vercel',
+                    iconImage: 'https://cdn.simpleicons.org/vercel'
+                },
+
+            ],
+            link: 'https://vita-travel.vercel.app/'
+        },
 
         {
             image: 'https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/wp-content/uploads/sites/2/2022/04/tesla-scaled.png/public',
@@ -42,10 +96,14 @@ const Projects = () => {
                 {
                     language: 'JavaScript',
                     iconImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                }
+                },
+                {
+                    language: 'Vercel',
+                    iconImage: 'https://cdn.simpleicons.org/vercel'
+                },
             ],
 
-            link: 'https://ayushtripathi20122004.github.io/tesla-clone-website/'
+            link: 'https://tesla-clone-website-lime.vercel.app/'
         },
         {
             image: DeveloperImage2,
@@ -68,7 +126,11 @@ const Projects = () => {
                 {
                     language: 'Swiper js',
                     iconImage: "https://swiperjs.com/images/swiper-logo.svg"
-                }
+                },
+                {
+                    language: 'Vercel',
+                    iconImage: 'https://cdn.simpleicons.org/vercel'
+                },
             ],
             link: 'https://ayushtripathi20122004.github.io/AayushTripaathi-Portfolio/'
         },
@@ -88,9 +150,13 @@ const Projects = () => {
             {
                 language: 'GSAP',
                 iconImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtP4ap9JhmDHpQufAN0Y27MG5fzjprQkTmQ&s"
-            }
+            },
+            {
+                language: 'Vercel',
+                iconImage: 'https://cdn.simpleicons.org/vercel'
+            },
             ],
-            link: 'https://ayushtripathi20122004.github.io/Kristian-Ulrych-website/'
+            link: 'https://kristian-ulrych-website.vercel.app/'
         },
         {
             image: ThomasVance,
@@ -108,67 +174,14 @@ const Projects = () => {
             {
                 language: 'GSAP',
                 iconImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtP4ap9JhmDHpQufAN0Y27MG5fzjprQkTmQ&s"
-            }
-            ],
-            link: 'https://ayushtripathi20122004.github.io/ThomasVance/'
-        },
-        {
-            image: Olympians,
-            heading: 'OLYMPIANS',
-            HeroText: 'A fully responsive skincare and beauty products showcase website with a clean, modern design, optimized for all devices.',
-            repositoryLink: 'https://github.com/AyushTripathi20122004/OLYMPIANS.git',
-            langUsed: [{
-                language: 'HTML',
-                iconImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
             },
             {
-                language: 'Tailwind',
-                iconImage: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                language: 'Vercel',
+                iconImage: 'https://cdn.simpleicons.org/vercel'
             },
-            {
-                language: 'GSAP',
-                iconImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtP4ap9JhmDHpQufAN0Y27MG5fzjprQkTmQ&s"
-            }
             ],
-            link: 'https://ayushtripathi20122004.github.io/OLYMPIANS/'
-        },
-        {
-            image: WeatherApp,
-            heading: 'Weather App',
-            HeroText: 'A responsive weather application using API and Modern UI.',
-            repositoryLink: 'https://github.com/ayushtripathi20122004/Weather-App',
-            langUsed: [{
-                language: 'React js',
-                iconImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-            },
-            {
-                language: 'Tailwind',
-                iconImage: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
-            }],
-            link: 'https://ayushtripathi20122004.github.io/Weather-App/'
-        },
-        {
-            image: NotesApp,
-            heading: 'Notes App',
-            HeroText: 'A clean and responsive notes app for creating, Deleting, and saving daily notes with a simple UI.',
-            repositoryLink: 'https://github.com/AyushTripathi20122004/Notes.git',
-            langUsed: [
-                {
-                    language: 'HTML',
-                    iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
-                },
-                {
-                    language: 'Tailwind',
-                    iconImage: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg'
-                },
-                {
-                    language: 'JavaScript',
-                    iconImage: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
-                }
-            ],
-            link: 'https://ayushtripathi20122004.github.io/Notes/'
-        },
-
+            link: 'https://thomas-vance-five.vercel.app/'
+        }
     ];
 
 
@@ -271,7 +284,9 @@ const Projects = () => {
 
                                         {/* Project image */}
                                         <div className='h-full w-full'>
-                                            <img className='h-full w-full object-cover lg:aspect-22/9  ' src={ele.image} alt="" />
+                                            <a href={ele.link}>
+                                                <img className='h-full w-full object-cover lg:aspect-22/9  ' src={ele.image} alt="" />
+                                            </a>
                                         </div>
                                         {/* project details */}
                                         <div className='flex gap-8 p-4 flex-col'>

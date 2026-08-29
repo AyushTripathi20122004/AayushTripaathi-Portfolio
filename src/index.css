@@ -1,18 +1,21 @@
 @import "tailwindcss";
 
-*{
+* {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight:auto;
+    font-weight: auto;
     font-style: normal;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 * {
     scrollbar-width: none;
 }
-*::-webkit-scrollbar{
+
+*::-webkit-scrollbar {
     display: none;
 }
 
@@ -75,6 +78,7 @@ html {
 .introdura5 {
     animation-duration: 2.4s;
 }
+
 .introdura6 {
     animation-duration: 2.8s;
 }
@@ -128,7 +132,8 @@ html {
 .swiper {
     padding-bottom: 55px;
 }
-.swiper-slide{
+
+.swiper-slide {
     height: auto !important;
 
 }
@@ -156,19 +161,21 @@ html {
     height: 50px !important;
     width: 50px !important;
 }
-.swiper-button-next svg,.swiper-button-prev svg{
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
     height: 12px !important;
 }
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
     font-size: 22px;
 }
 
 @media (max-width: 1024px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none !important;
-  }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none !important;
+    }
 }
-
-

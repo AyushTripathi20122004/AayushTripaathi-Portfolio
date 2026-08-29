@@ -9,7 +9,7 @@ const ThemeContext = ({ children }) => {
   
   useEffect(()=>{
     localStorage.setItem('Theme',theme);
-  },[theme])
+  },[theme]);
 
   return (
     <ThemeDataContext.Provider value={{theme,setTheme}}>

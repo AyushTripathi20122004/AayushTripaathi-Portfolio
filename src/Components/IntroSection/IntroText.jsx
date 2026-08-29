@@ -6,7 +6,7 @@ import { ThemeDataContext } from '../ThemeSection/ThemeContext';
 const IntroText = () => {
   const data=useContext(ThemeDataContext);
   return (
-    <div id='Home' className='flex w-full flex-col gap-6 lg:px-6 md:px-4 px-6 py-3 '>
+    <div id='Home' className='flex w-full flex-col gap-4 lg:px-6 md:px-4 px-6 py-3 '>
         {/* TEXT1 */}
        <div  className={` introTextAnime introdura1 flex  w-fit items-center ${data.theme=='dark'? 'border border-white/60 text-white':'border border-black text-black' }  rounded-full px-4 py-1.5  gap-2`}>
              <BadgeCheck size={16}/>
@@ -15,7 +15,8 @@ const IntroText = () => {
         </div>
         {/* Name of Owner */}
         <div className='flex flex-col gap-2 '>
-            <h1 className={`introTextAnime  introdura2  text-6xl font-semibold ${data.theme=='dark'?'text-white':'text-black'}`}>Hi, I'm <span className='text-transparent bg-clip-text bg-linear-to-br  from-violet-400 via-violet-700 to-violet-950'>Aayush</span></h1>
+            <h1 className={`introTextAnime  introdura2  text-6xl font-semibold ${data.theme=='dark'?'text-white':'text-black'}`}> <span className='text-xl'>Hi, I'm</span> <br />
+               <span className='text-transparent bg-clip-text bg-linear-to-br  from-violet-400 via-violet-700 to-violet-950'>Aayush Tripaathi</span></h1>
 
 
             <p className={`text-4xl  introTextAnime introdura3 font-medium ${data.theme=='dark'?'text-white':'text-black'}`}>I build modern web<br /><span className='text-transparent bg-clip-text bg-linear-to-br  from-violet-400 via-violet-700 to-violet-950'>experiences</span></p>
@@ -36,7 +37,7 @@ const IntroText = () => {
         </div>
         
         {/* links */}
-        <div className='flex introTextAnime introdura6 flex-col gap-2 mt-5'>
+        <div className='flex introTextAnime introdura6 flex-col gap-2 '>
           <span className={` text-[14px] ${data.theme=='dark'?'text-white/80':'text-black font-medium'}  `}>Follow me on</span>
 
           <div className='  flex gap-2 text-2xl'>
