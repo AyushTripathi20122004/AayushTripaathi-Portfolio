@@ -2,7 +2,7 @@
 
 A modern, interactive, and fully responsive **developer portfolio website** built with React.js and modern frontend technologies.
 
-🔗 **Live Website:** https://ayushtripathi20122004.github.io/AayushTripaathi-Portfolio/
+🔗 **Live Website:** [https://ayushtripathi20122004.github.io/AayushTripaathi-Portfolio/](https://aayush-tripaathi-portfolio-9bfkx2lxj.vercel.app/)
 
 ## 📌 About The Project
 
