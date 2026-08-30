@@ -13,7 +13,9 @@ import { useEffect, useRef } from 'react'
 // imorting gsap for cursor animation
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Loader from './Components/Loader/loader'
+
+import Loader from './Components/Loader/Loader'
+
 gsap.registerPlugin(ScrollTrigger);
 
 
