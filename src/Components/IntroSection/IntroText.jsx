@@ -33,7 +33,7 @@ const IntroText = () => {
             <a href='#Projects' className='px-2 py-2 flex gap-2 active:scale-95 transition-all duration-200 justify-center bg-violet-600 rounded-lg font-semibold'>View My Work <ArrowRight /></a>
 
 
-          <a href='#Contacts' className={`px-2 py-2 rounded-lg ${data.theme=='dark'?'text-white border border-white/80':'text-black border-2 border-black'}  active:scale-95 transition-all duration-200 flex gap-2 justify-center`}>Lets Connect <MessageCircleMore /></a>
+          <a href='#LetsConnect' className={`px-2 py-2 rounded-lg ${data.theme=='dark'?'text-white border border-white/80':'text-black border-2 border-black'}  active:scale-95 transition-all duration-200 flex gap-2 justify-center`}>Lets Connect <MessageCircleMore /></a>
         </div>
         
         {/* links */}

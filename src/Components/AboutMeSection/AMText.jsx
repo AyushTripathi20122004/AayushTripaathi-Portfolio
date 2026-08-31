@@ -19,14 +19,14 @@ const AMText = () => {
        <span className='inline-block text-lg font-normal'>I enjoy building interfaces and learning new technologies.</span>
        
        </p>
-
+{/* 
        <div className='rounded-xl Ambutton  mt-2   border border-violet-600 bg-violet-600/5 px-4 py-3 active:scale-95 transition-transform duration-150'>
         <a href='#Contacts' className='flex  items-center gap-3 text-violet-600 font-medium'>
           <UserRoundPlus size={20} className='stroke-violet-600 fill-violet-700' />
           <span>lets connect</span>
           <ArrowRightIcon size={18} className='stroke-violet-600' />
         </a>
-      </div>
+      </div> */}
 
       </div>
   )

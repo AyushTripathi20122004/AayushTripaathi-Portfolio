@@ -109,7 +109,7 @@ const Projects = () => {
             image: DeveloperImage2,
             heading: 'Portfolio',
             HeroText: 'A reponsive portfolio wesite showcasing my skills and projects and experience.',
-            repositoryLink: "",
+            repositoryLink: "https://github.com/AyushTripathi20122004/AayushTripaathi-Portfolio.git",
             langUsed: [
                 {
                     language: 'React js',
@@ -132,7 +132,7 @@ const Projects = () => {
                     iconImage: 'https://cdn.simpleicons.org/vercel'
                 },
             ],
-            link: 'https://ayushtripathi20122004.github.io/AayushTripaathi-Portfolio/'
+            link: 'https://aayush-tripaathi-portfolio-9bfkx2lxj.vercel.app/'
         },
         {
             image: KristianUlrych,

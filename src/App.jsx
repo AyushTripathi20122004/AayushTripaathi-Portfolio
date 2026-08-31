@@ -15,6 +15,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Loader from './Components/Loader/Loader'
+import LetsConnect from './Components/LetsConnect/LetsConnect'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -120,10 +121,10 @@ const App = () => {
         </div>
         <div className='flex flex-col  gap-4'>
           <Projects />
-          <div id='Contacts' className=' mt-40'>
-            
+          <LetsConnect />
+          <div id='Contacts' className=' mt-20'>
             <Footer />
-            <div className='group  overflow-hidden font-medium py-10 uppercase logotext text-nowrap lg:text-8xl text-4xl md:text-6xl text-center bg-clip-text text-transparent border-t border-white/10  bg-gradient-to-br  from-violet-200 via-violet-700 to-violet-950'>Aayush Tripaathi</div>
+            <div className='group  overflow-hidden font-bold  py-10 uppercase logotext text-nowrap lg:text-8xl text-4xl md:text-6xl text-center  text-violet-600/20   border-t border-white/10 '>Aayush Tripaathi</div>
           </div>
         </div>
 
