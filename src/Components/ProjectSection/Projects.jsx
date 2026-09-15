@@ -10,6 +10,7 @@ import KristianUlrych from '../../assets/KristianUlrych.png'
 import VitaTravel from '../../assets/VitaTravel.png'
 import MacBook from '../../assets/MacBook.png'
 import ThomasVance from '../../assets/ThomasVance.png'
+import K72 from '../../assets/k72.png'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -22,6 +23,32 @@ const Projects = () => {
     const data = useContext(ThemeDataContext)
 
     const cards = [
+        {
+            image: K72,
+            heading: 'K72',
+            HeroText: `Recreated the K72 website by Locomotive, originally featured on Awwwards, as a frontend development project.Focused on accurately replicating the original layout, interactions, animations, and overall visual experience`,
+            repositoryLink: "https://github.com/AyushTripathi20122004/K72.git",
+            langUsed: [
+                {
+                    language: 'React js',
+                    iconImage: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                },
+                {
+                    language: 'Tailwind',
+                    iconImage: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                },
+                {
+                    language: 'GSAP',
+                    iconImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtP4ap9JhmDHpQufAN0Y27MG5fzjprQkTmQ&s"
+                },
+                {
+                    language: 'Vercel',
+                    iconImage: 'https://cdn.simpleicons.org/vercel'
+                },
+
+            ],
+            link: 'https://k72-steel-delta.vercel.app/'
+        },
         {
             image: MacBook,
             heading: 'MacBook Pro',
